@@ -46,6 +46,26 @@ In this exercise you will:
 # Paste here the sequence of git commands you ran
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
+1)
+mkdir ~/my-local-repo
+cd ~/my-local-repo
+git init
+2) 
+git checkout -b feature-1
+3) 
+echo "This is feature-1 implementation" > feature.txt
+git add feature.txt
+git commit -m "Add feature.txt with a short description"
+4)
+git checkout master  # or `main` depending on your branch
+git merge feature-1
+
+output:
+Switched to a new branch 'feature-1'
+[feature-1 (root-commit) 0ea8677] Add feature.txt with a short description
+1 file changed, 1 insertion(+)
+create mode 100644 feature.txt
+Switched to branch 'master'
 
 ---
 
@@ -69,7 +89,7 @@ In this exercise you will:
 ```bash
 # Paste here the push & clone commands and outputs
 ```
-
+1) 
 ---
 
 ### Task 3: GitHub & THGA GitLab
