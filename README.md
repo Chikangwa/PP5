@@ -146,8 +146,11 @@ To gitlab.thga.de:monique.chikangwa-nguekep/myproject-gl.git
 **Your PR/MR Links & Descriptions**
 
 * GitHub PR: *paste URL and a one-sentence summary*
+* https://github.com/STEMgraph/fb98095a-0ef6-465a-886a-e8b9e3cad876/pull/1
+* summary:Added a new line to README for Task 4 – pp5-changes branch
 * GitLab MR: *paste URL and a one-sentence summary*
-
+* https://gitlab.thga.de/monique.chikangwa-nguekep/daniel.krueger/while-loop-/merge_requests/1
+Added a line in README.md for Task 4 (branch: pp5-changes)
 ---
 
 **Remember:** Stop working after **90 minutes** and record where you stopped!
