@@ -46,7 +46,23 @@ In this exercise you will:
 # Paste here the sequence of git commands you ran
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
+1) mkdir ~/my-local-repo
+cd ~/my-local-repo
+git init
+2) git checkout -b feature-1
+3) echo "This is feature-1 implementation" > feature.txt
+git add feature.txt
+git commit -m "Add feature.txt with a short description"
+4) git checkout master
+git merge feature-1
 
+OUTPUT:
+Initialized empty Git repository in /root/NguekepMonique/my-local-repo/.git/
+Switched to a new branch 'feature-1'
+[feature-1 (root-commit) 3b93b1f] Add feature.txt with a short description
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+ 
 ---
 
 ### Task 2: Bare Repository on an SSH Server
@@ -55,7 +71,7 @@ In this exercise you will:
 
    ```bash
    ssh youruser@vorlesungsserver \
-     "mkdir -p ~/repos/myproject.git && cd ~/repos/myproject.git && git init --bare"
+      "mkdir -p ~/repos/myproject.git && cd ~/repos/myproject.git && git init --bare"
    ```
 2. On your local machine, add it as a remote named `origin-ssh`:
 
@@ -91,6 +107,32 @@ In this exercise you will:
 ```bash
 # Paste here the remote‐adding & push outputs
 ```
+git remote add github git@github.com:Chikangwa/myproject-gh.git
+git remote add gitlab git@gitlab.thga.de:monique.chikangwa-nguekep/myproject-gl.git
+git push github master
+git push gitlab master
+
+OUTPUT:
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 452 bytes | 452.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To github.com:chikangwa/myproject-gh.git
+ * [new branch]      master -> master
+
+   Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 452 bytes | 452.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To gitlab.thga.de:monique.chikangwa-nguekep/myproject-gl.git
+ * [new branch]      master -> master
+
+
+
 
 ---
 
